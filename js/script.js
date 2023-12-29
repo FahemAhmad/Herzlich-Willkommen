@@ -21,6 +21,15 @@ class Main {
         e.preventDefault();
         console.log(form.getCheckedValues());
       });
+
+      $("#scroll-btn").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: $("#services-section").offset().top,
+          },
+          1000
+        );
+      });
     });
   }
 
