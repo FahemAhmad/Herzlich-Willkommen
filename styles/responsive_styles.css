@@ -97,9 +97,77 @@
   .faq__left-gradient-image {
     min-height: 150vh;
   }
+
+  /* Service page */
+  .mediamatiker__details-left {
+    width: 50%;
+  }
+
+  .mediamatiker__details-image {
+    max-height: 200px;
+  }
+
+  .mediamatiker__number_heading {
+    font-size: 4.5rem;
+  }
+  .mediamatiker__number_heading:first-child {
+    margin-top: 20px;
+  }
+  .mediamatiker__title {
+    font-size: 24px;
+  }
+
+  .mediamatiker__description-right,
+  .mediamatiker__description-left {
+    font-size: 14rem;
+  }
+  .mediamatiker__image {
+    width: 200px;
+    height: auto;
+  }
+  .mediamatiker__image-large {
+    width: 250px;
+    height: auto;
+  }
+  .mediamatiker__text-container {
+    max-width: 85%;
+  }
+
+  .mediamatiker__termine {
+    font-size: 1.75rem;
+  }
+
+  .grid__container {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .grid__item-1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .grid__item-2 {
+    justify-content: center;
+    align-items: center;
+  }
+  .grid__item-3 {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .side__button {
+    position: relative;
+    top: 15vh;
+  }
+  .side__button.down {
+    position: relative;
+    top: 30vh;
+  }
+
   .text__heading--primary {
     font-size: 20px;
     line-height: 26px;
@@ -129,6 +197,7 @@
 
   .hero__image-container {
     width: 220px;
+    margin-top: 12%;
   }
 
   .hero__image {
@@ -183,5 +252,73 @@
 
   .faq__left-gradient-image {
     min-height: 100vh;
+  }
+
+  /* Mediamatiker page */
+
+  .mediamatiker__details-left {
+    display: none;
+  }
+  .mediamatiker__details-right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text__heading--primary-large {
+    text-align: center;
+    margin: auto;
+  }
+
+  /* mediamatiker */
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+    text-align: center;
+  }
+
+  .mediamatiker__description-container {
+    flex-direction: column;
+  }
+
+  .mediamatiker__image {
+    display: none;
+  }
+  .mediamatiker__description-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .mediamatiker__description-right {
+    display: none;
+  }
+
+  .right {
+    justify-content: center;
+  }
+  .grid__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid__item-1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .grid__item-2 {
+    justify-content: center;
+    align-items: center;
+  }
+  .grid__item-3 {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text__paragraph {
+    font-size: 0.85rem;
   }
 }

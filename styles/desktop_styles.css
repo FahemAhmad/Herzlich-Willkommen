@@ -56,10 +56,14 @@ input[type="checkbox"]:disabled {
   position: relative !important;
 }
 
-.abs {
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+.side__button {
   position: absolute !important;
   right: 10px;
-  top: 25vh;
+  top: 30vh;
 }
 
 .line {
@@ -125,6 +129,11 @@ input[type="checkbox"]:disabled {
   width: 200px;
   margin-right: -5px;
   margin-top: 3px;
+}
+
+.side__inner-border a {
+  text-decoration: none;
+  color: #000;
 }
 /* Accordion */
 
@@ -552,6 +561,19 @@ input[type="checkbox"]:disabled {
   pointer-events: none;
 }
 
+.mediamatiker_right-gradient.ict {
+  background-image: url("../upload/images/Vector\ 23.png");
+  z-index: -1;
+}
+.mediamatiker_right-gradient.app {
+  background-image: url("../upload/images/Vector\ 24_g.png");
+  z-index: -1;
+}
+.mediamatiker_right-gradient.sys {
+  background-image: url("../upload/images/Vector\ 24_l.png.png");
+  z-index: -1;
+}
+
 .mediamatiker__details {
   width: 100%;
   display: flex;
@@ -675,6 +697,19 @@ input[type="checkbox"]:disabled {
   pointer-events: none;
 }
 
+.mediamatiker__description-left-gradient.ict {
+  background-image: url("../upload/images/Vector\ 20.png");
+  z-index: -1;
+}
+.mediamatiker__description-left-gradient.app {
+  background-image: url("../upload/images/Vector\ 21.png");
+  z-index: -1;
+}
+.mediamatiker__description-left-gradient.sys {
+  background-image: url("../upload/images/Vector\ 24.png");
+  z-index: -1;
+}
+
 .mediamatiker__description-right-gradient {
   background-image: url("../upload/images/Vector\ 8.png");
   min-height: 250vh;
@@ -686,6 +721,11 @@ input[type="checkbox"]:disabled {
   top: 10%;
   overflow: visible;
   pointer-events: none;
+}
+
+.mediamatiker__description-right-gradient.app {
+  background-image: url("../upload/images/Vector\ 8_g.png");
+  z-index: -1;
 }
 
 .mediamatiker__description-left {
@@ -840,6 +880,7 @@ input[type="checkbox"]:disabled {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
+  margin: auto;
 }
 
 .grid__item-1 {
