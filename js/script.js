@@ -20,6 +20,13 @@ class Main {
       $("#anmeldeformular").on("submit", function (e) {
         e.preventDefault();
         console.log(form.getCheckedValues());
+        var formData = new FormData(e.target); // create a FormData object from the form
+
+        var firstName = formData.get("name"); // get the value of the 'firstName' field
+        var lastName = formData.get("vorname"); // get the value of the 'lastName' field
+
+        console.log("First Name:", firstName);
+        console.log("Last Name:", lastName);
       });
 
       $("#scroll-btn").click(function () {
