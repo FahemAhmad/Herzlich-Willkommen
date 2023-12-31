@@ -9,6 +9,16 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+}
+
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
@@ -961,6 +971,7 @@ input[type="checkbox"]:disabled {
   background-position: right;
   background-repeat: no-repeat;
   top: 30vh;
+  right: 0;
   overflow: hidden;
   pointer-events: none;
   z-index: -1;

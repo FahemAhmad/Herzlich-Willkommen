@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/desktop_styles.css" />
     <link rel="stylesheet" href="css/responsive_styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/code.jquery.com_jquery-3.7.0.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -62,7 +62,9 @@
     </nav>
 
     <section class="expertein">
-      <h1 class="text__heading--primary">experte/in werden</h1>
+      <div class="text__heading--primary">
+        <h1>experte/in werden</h1>
+      </div>
       <div class="text__same-paragraph">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni labore
@@ -199,7 +201,9 @@
     </div>
 
     <form id="anmeldeformular" class="form">
-      <h1 class="text__heading--primary">ANMELDE FORMULAR</h1>
+      <div class="text__heading--primary">
+        <h1>ANMELDE FORMULAR</h1>
+      </div>
       <div class="form__space"></div>
       <div class="form__group">
         <label for="name" class="form__label">Name:</label>
@@ -341,24 +345,31 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer id="footer" class="footer">
       <div class="footer__container">
         <div class="footer__container-left">
-          <h5 class="footer__heading">AKTUARIAT PK19</h5>
-          <p class="footer__paragraph">
-            Frau Christina Beiz
-            <br />
-            Hermenweg 6
-            <br />
-            5603 Staufen
-          </p>
-          <p class="footer__contact">
-            Telefon :
-            <a href="tel:+41438171820"> +41 43 817 18 20</a>
-            <br />
-            Mail :
-            <a href="mailto:christina.belz@pk19.ch">christina.belz@pk19.ch</a>
-          </p>
+          <div class="footer__heading">
+            <h5>AKTUARIAT PK19</h5>
+          </div>
+          <div class="footer__paragraph">
+            <p>
+              Frau Christina Beiz
+              <br />
+              Hermenweg 6
+              <br />
+              5603 Staufen
+            </p>
+          </div>
+          <div class="footer__contact">
+            <p>
+              Telefon :
+              <a href="tel:+41438171820"> +41 43 817 18 20</a>
+              <br />
+              Mail :
+              <a href="mailto:christina.belz@pk19.ch">christina.belz@pk19.ch</a>
+            </p>
+          </div>
         </div>
         <div class="footer__container-middle">
           <img
@@ -368,13 +379,17 @@
           />
         </div>
         <div class="footer__container-right">
-          <h5 class="footer__heading">Copyright</h5>
-          <p class="footer__paragraph">
-            Das Copyright für sämtliche Inhalte der <br />
-            Website www.pk19.ch
-            <br />
-            liegt bei der Prüfungskommission PK19.
-          </p>
+          <div class="footer__heading">
+            <h5>Copyright</h5>
+          </div>
+          <div class="footer__paragraph">
+            <p>
+              Das Copyright für sämtliche Inhalte der <br />
+              Website www.pk19.ch
+              <br />
+              liegt bei der Prüfungskommission PK19.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
