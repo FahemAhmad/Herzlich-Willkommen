@@ -168,8 +168,16 @@ input[type="checkbox"]:disabled {
   width: 100%;
   box-sizing: border-box;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.accordion__content {
+
+.accordion__header p {
+  flex: 8;
+}
+
+.accordion .accordion__content {
   padding: 10px 15px;
   display: none;
   box-sizing: border-box;
@@ -183,6 +191,7 @@ input[type="checkbox"]:disabled {
   transition: transform 0.3s;
   float: right;
   margin-right: 10%;
+  flex: 1;
 }
 
 .accordion__item.active .accordion__icon {
